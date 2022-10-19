@@ -27,16 +27,8 @@ export default function App() {
   );
 };
 
-//sprawdzic na youtube ale:
-//zrobic redux store do zmiany categories
-//aby zmienic categories trzeba pobrac categories z typow jedzenia
-//type jedzenia mozemy pobrac w utilsach z gettypes
-//do get types przekazywane jest popular data i trzeba to gdzies wywolac
-//przyklad uzycia w react-table repo
-//errorBoundary ? wsadzic
-//fetchdata UseEffect zrobic json jednego i odfiltrowac w helpersach
-//zminifikowac popular data i categories data do jsona???
-
-//do tego dorobic searcha z fund screenerrr
-
+//move navigation to seperate folder
+//add redux store and move from Home component
+//add styles - constans - mixins - colors - typography - spacings
+//add Error boundary
 
