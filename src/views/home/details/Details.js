@@ -58,16 +58,11 @@ const Details = ({ route, navigation }) => {
                         <MaterialCommunityIcons name="star" size={12} color={colors.white} />
                     </View>
                 </View>
-            </SafeAreaView>
-            {/* Titles */}
-            <Title title={item.title}/>
-            {/* Price */}
-            <Price price={item.price} />
-            {/* Item info */}
-            <Info item ={item}/>
-            {/* Ingredients */}
-            <Ingredients item={item} />
-            {/* Place an order Button */}
+            </SafeAreaView>         
+            <Title title={item.title}/>       
+            <Price price={item.price} />      
+            <Info item ={item}/>       
+            {item.ingredients ? <Ingredients item={item} /> : null}
             <Button text={'Place an order'}/>
         </View>
     )

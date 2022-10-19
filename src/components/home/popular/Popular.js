@@ -3,7 +3,6 @@ import { View, Text, TouchableOpacity, StyleSheet, Image } from "react-native";
 import colors from "../../../assets/colors/colors";
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
 import Feather from 'react-native-vector-icons/Feather';
-import { getTypes } from '../../../utils/FilteringData';
 
 MaterialCommunityIcons.loadFont();
 Feather.loadFont();
@@ -86,21 +85,19 @@ const styles = StyleSheet.create({
         height: 125,
         resizeMode: 'contain'
     },
+    noItems: {
+        fontSize: 18,
+        fontFamily: 'Montserrat-Bold',
+        marginTop: 30,
+        textAlign: 'center'
+    }
 })
 
-const Popular = ({ popularData, navigation }) => {
-// oddzielic do glownego stora te filtrowanie
-    const getTypes = (popularData) => {
-       
-    }
-    let currentType = 'pizza';
-    const types = popularData.map(item => item.type);
-    const filteredData = popularData.filter(item => item.type === currentType);
-//    stop
+const Popular = ({ data, navigation }) => {
     return (
         <View style={styles.popularWrapper}>
             <Text style={styles.popularTitle}>Popular</Text>
-            {filteredData.map(item => (
+            {data.length ? (data.map(item => (
                 <TouchableOpacity onPress={() => navigation.navigate('Details', {
                     item: item,
                 })} key={item.id}>
@@ -137,7 +134,8 @@ const Popular = ({ popularData, navigation }) => {
                         </View>
                     </View>
                 </TouchableOpacity>
-            ))}
+            ))) :
+            (<Text style={styles.noItems}>no items :(</Text>)}
         </View>
     )
 }

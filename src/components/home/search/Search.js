@@ -26,19 +26,17 @@ const styles = StyleSheet.create({
     },
 })
 
-const Search = () => {
-
-    const searchFilterFunction = (e) => {
-        console.log(e.event.target)
-    }
+const Search = ({handleItemsSearch, value}) => {
 
     return (
         <View style={styles.searchWrapper}>
             <Feather name="search" size={16} color={colors.textDark} />
             <View style={styles.search}>
                 <TextInput 
-                onChangeText={(text) => searchFilterFunction(text)} 
-                style={styles.searchText} placeholder={'Search'} />
+                    onChangeText={(value) => handleItemsSearch(value)} 
+                    style={styles.searchText} placeholder={'Search'} 
+                    value={value}
+                />
             </View>
         </View>
     )

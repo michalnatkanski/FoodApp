@@ -55,27 +55,31 @@ const styles = StyleSheet.create({
     },
     categorySelectIcon: {
         alignSelf: 'center',
+        fontSize: 10
     },
 })
 
-const Categories = ({ categoriesData }) => {
+const Categories = ({ categoriesData, setCategory, activeCategory }) => {
 
     const renderCategoryItem = ({ item }) => {
+
         return (
-            <TouchableOpacity style={[styles.categoryItemWrapper, {
-                backgroundColor: item.selected ? colors.primary : colors.white,
+            <TouchableOpacity 
+            onPress={() => setCategory(item.type)} 
+            style={[styles.categoryItemWrapper, {
+                backgroundColor: item.type === activeCategory ? colors.primary : colors.white,
                 marginLeft: item.id == 1 ? 20 : 0,
             }]}>
                 <Image source={item.image} style={styles.categoryItemImage} />
-                <Text style={styles.categoryItemTitle}>{item.title}</Text>
+                <Text style={styles.categoryItemTitle}>{item.type}</Text>
                 <View style={[styles.categorySelectWrapper, {
-                    backgroundColor: item.selected ? colors.white : colors.secondary
+                    backgroundColor: item.type === activeCategory ? colors.white : colors.secondary
                 }]}>
                     <Feather
                         style={styles.categorySelectIcon}
                         name="chevron-right"
                         size={8}
-                        color={item.selected ? colors.black : colors.white}
+                        color={item.type === activeCategory ? colors.black : colors.white}
                     />
                 </View>
             </TouchableOpacity>

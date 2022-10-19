@@ -1,14 +1,14 @@
-import React from "react";
+import React, { useState } from "react";
 import { StyleSheet, View, ScrollView } from "react-native";
-//data
-import categoriesData from '../../../assets/data/categoriesData';
-import popularData from '../../../assets/data/popularData';
 //components
 import Categories from "../../../components/home/categories";
 import Popular from "../../../components/home/popular";
 import Search from "../../../components/home/search";
 import Title from '../../../components/general/title';
 import Header from '../../../components/general/header';
+//helpers
+import { filteredItems, categoriesData, searchResult } from "../../../utils/FilteringData";
+import { useSearchDebounce } from "../../../utils/debounce";
 
 const styles = StyleSheet.create({
     container: {
@@ -18,18 +18,22 @@ const styles = StyleSheet.create({
 
 const Home = ({ navigation }) => {
 
-    // const setFundsSearch = ({ target }) => {
-    //     setSearch(target.value)
-    // }
-    // const [filteredDataSource, setFilteredDataSource] = useState(popularData);
+    const [activeCategory, setActiveCategory] = useState('Pizza');
+    const [search, setSearch] = useState('')
 
-    // const searchFilterFunction = (text) => {
-    //     if (!text) return;
-    //     const newData = popularData.filter(item => String(item.title).includes(text))
-    //     setFilteredDataSource(newData.length == 0 ? newData : popularData);
-    //   };
+    const filteredDataByCategory = filteredItems.filter(item => item.type === activeCategory);
 
-    //sprawdzic filtrowanie z fund screenera i zrobic debounce
+    const debounceValue = useSearchDebounce(search, 250);
+
+    const getSearchResult = searchResult(filteredDataByCategory, debounceValue)
+
+    const data = getSearchResult === null ? filteredDataByCategory : getSearchResult;
+
+    const setCategory = (type) => setActiveCategory(type);
+
+    const handleItemsSearch = (value) => {
+        setSearch(value)
+    }
 
     return (
         <View style={styles.container}>
@@ -37,16 +41,11 @@ const Home = ({ navigation }) => {
                 contentInsetAdjustmentBehavior="automatic"
                 showsVerticalScrollIndicator={false}
             >
-                {/* Header */}
                 <Header />
-                {/* {titles} */}
                 <Title title={'Delivery'} subtitle={'Food'}/>
-                {/* {Search} */}
-                <Search />
-                {/* {Categories} */}
-                <Categories categoriesData={categoriesData}/>
-                {/* {Popular} */}
-                <Popular popularData={popularData} navigation={navigation}/>
+                <Search value={search} handleItemsSearch={handleItemsSearch}/>
+                <Categories setCategory={setCategory} categoriesData={categoriesData} activeCategory={activeCategory}/>
+                <Popular data={data} navigation={navigation}/>
             </ScrollView>
         </View>
     )
