@@ -1,5 +1,5 @@
 import { StyleSheet } from "react-native";
-import { colors } from "../../../assets/styles";
+import { colors, typography } from "../../../assets/styles";
 
 export default StyleSheet.create({
     titleWrapper: {
@@ -7,13 +7,13 @@ export default StyleSheet.create({
         paddingHorizontal: 20,
     },
     titlesSubtitle: {
-        fontFamily: 'Montserrat-Regular',
-        fontSize: 16,
+        fontFamily: typography.FONT_MONTSERRAT_REGULAR,
+        fontSize: typography.FONT_SIZE_16,
         color: colors.MAIN_COLORS.TEXT_DARK,
     },
     titlesTitle: {
-        fontFamily: 'Montserrat-Bold',
-        fontSize: 32,
+        fontFamily: typography.FONT_MONTSERRAT_BOLD,
+        fontSize: typography.FONT_SIZE_32,
         color: colors.MAIN_COLORS.TEXT_DARK,
         marginTop: 5,
     },

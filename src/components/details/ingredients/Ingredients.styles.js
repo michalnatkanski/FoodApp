@@ -1,5 +1,5 @@
 import { StyleSheet } from "react-native";
-import { colors, constants } from "../../../assets/styles";
+import { colors, constants, typography } from "../../../assets/styles";
 
 export default StyleSheet.create({
     ingredientsWrapper: {
@@ -7,8 +7,8 @@ export default StyleSheet.create({
     },
     ingredientsTitle: {
         paddingHorizontal: 20,
-        fontFamily: 'Montserrat-Bold',
-        fontSize: 16,
+        fontFamily: typography.FONT_MONTSERRAT_BOLD,
+        fontSize: typography.FONT_SIZE_16,
         color: colors.MAIN_COLORS.TEXT_DARK,
     },
     ingredientsListWrapper: {

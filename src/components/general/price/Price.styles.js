@@ -1,5 +1,5 @@
 import { StyleSheet } from "react-native";
-import { colors } from "../../../assets/styles";
+import { colors, typography } from "../../../assets/styles";
 
 export default StyleSheet.create({
     priceWrapper: {
@@ -8,7 +8,7 @@ export default StyleSheet.create({
     },
     priceText: {
         color: colors.MAIN_COLORS.PRICE,
-        fontFamily: 'Montserrat-Bold',
-        fontSize: 32,
+        fontFamily: typography.FONT_MONTSERRAT_BOLD,
+        fontSize: typography.FONT_SIZE_32,
     },
 })

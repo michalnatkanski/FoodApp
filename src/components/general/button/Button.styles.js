@@ -1,5 +1,5 @@
 import { StyleSheet } from "react-native";
-import { colors, constants } from "../../../assets/styles";
+import { colors, constants, typography } from "../../../assets/styles";
 
 export default StyleSheet.create({
     orderWrapper: {
@@ -14,8 +14,8 @@ export default StyleSheet.create({
 
     },
     orderText: {
-        fontFamily: 'Montserrat-Bold',
-        fontSize: 14,
+        fontFamily: typography.FONT_MONTSERRAT_BOLD,
+        fontSize: typography.FONT_SIZE_14,
         marginRight: 10,
     },
 })

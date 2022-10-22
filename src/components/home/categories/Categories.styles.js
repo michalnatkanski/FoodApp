@@ -1,13 +1,13 @@
 import { StyleSheet } from "react-native";
-import { colors, constants } from "../../../assets/styles";
+import { colors, constants, typography } from "../../../assets/styles";
 
 export default StyleSheet.create({
     categoriesWrapper: {
         marginTop: 30,
     },
     categoriesTitle: {
-        fontFamily: 'Montserrat-Bold',
-        fontSize: 16,
+        fontFamily: typography.FONT_MONTSERRAT_BOLD,
+        fontSize: typography.FONT_SIZE_16,
         paddingHorizontal: 20,
     },
     categoriesListWrapper: {
@@ -36,8 +36,8 @@ export default StyleSheet.create({
     },
     categoryItemTitle: {
         textAlign: 'center',
-        fontFamily: 'Montserrat-Medium',
-        fontSize: 14,
+        fontFamily: typography.FONT_MONTSERRAT_MEDIUM,
+        fontSize: typography.FONT_SIZE_14,
         marginTop: 10,
     },
     categorySelectWrapper: {
@@ -51,6 +51,6 @@ export default StyleSheet.create({
     },
     categorySelectIcon: {
         alignSelf: 'center',
-        fontSize: 10
+        fontSize: typography.FONT_SIZE_10
     },
 })

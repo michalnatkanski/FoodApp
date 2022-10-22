@@ -1,5 +1,5 @@
 import { StyleSheet } from "react-native";
-import { colors, constants } from "../../../assets/styles";
+import { colors, constants, typography } from "../../../assets/styles";
 
 export default StyleSheet.create({
     popularCardWrapper: {
@@ -24,19 +24,19 @@ export default StyleSheet.create({
     },
     popularTopText: {
         marginLeft: 10,
-        fontFamily: 'Montserrat-Semibold',
+        fontFamily: typography.FONT_MONTSERRAT_SEMI_BOLD,
     },
     popularTitlesWrapper: {
         marginTop: 20,
     },
     popularTitlesTitle: {
-        fontFamily: 'Montserrat-Semibold',
-        fontSize: 14,
+        fontFamily: typography.FONT_MONTSERRAT_SEMI_BOLD,
+        fontSize: typography.FONT_SIZE_14,
         color: colors.MAIN_COLORS.TEXT_DARK
     },
     popularTitlesWeight: {
-        fontFamily: 'Montserrat-Medium',
-        fontSize: 12,
+        fontFamily: typography.FONT_MONTSERRAT_MEDIUM,
+        fontSize: typography.FONT_SIZE_12,
         color: colors.MAIN_COLORS.TEXT_LIGHT,
         marginTop: 5,
     },
@@ -59,8 +59,8 @@ export default StyleSheet.create({
         marginLeft: 20,
     },
     rating: {
-        fontFamily: 'Montserrat-Semibold',
-        fontSize: 12,
+        fontFamily: typography.FONT_MONTSERRAT_SEMI_BOLD,
+        fontSize: typography.FONT_SIZE_12,
         color: colors.MAIN_COLORS.BLACK,
         marginLeft: 5,
     },
