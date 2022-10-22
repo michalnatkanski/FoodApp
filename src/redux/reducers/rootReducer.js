@@ -1,6 +1,11 @@
 import { combineReducers } from "redux";
-import categoriesReducer from "./categoriesReducer";
+import reducers from "./categoriesReducer";
 
-const rootReducer = combineReducers({currentCategory: categoriesReducer});
+const { categoriesReducer, searchReducer } = reducers;
+
+const rootReducer = combineReducers({
+    currentCategory: categoriesReducer,
+    searchValue: searchReducer,
+});
 
 export default rootReducer;

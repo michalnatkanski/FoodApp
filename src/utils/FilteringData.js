@@ -14,7 +14,6 @@ const searchResult = (items, searchValue) => {
         return items.filter(item => {
             return (
                 item.title.toUpperCase().includes(searchValue.toUpperCase())
-  
             )
         })
     }

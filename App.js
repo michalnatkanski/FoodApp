@@ -1,34 +1,19 @@
 
 import React from 'react';
-import { NavigationContainer } from '@react-navigation/native';
-import { createNativeStackNavigator } from '@react-navigation/native-stack';
 //components
-import Home from './src/views/home/home';
-import Details from './src/views/home/details';
+import Navigator from './src/navigation/Navigator';
+//redux
+import { Provider } from 'react-redux';
+import rootReducer from './src/redux/reducers/rootReducer';
+import { createStore } from 'redux';
 
-const Stack = createNativeStackNavigator();
+const store = createStore(rootReducer);
 
 export default function App() {
 
   return (
- 
-      <NavigationContainer>
-        <Stack.Navigator>
-          <Stack.Screen name="Home" component={Home} options={{
-            headerShown: false,
-          }} />
-          <Stack.Screen name="Details" component={Details} options={{
-            headerShown: false,
-          }} />
-        </Stack.Navigator>
-      </NavigationContainer>
-
-
+    <Provider store={store}>
+      <Navigator />
+    </Provider>
   );
 };
-
-//move navigation to seperate folder
-//add redux store and move from Home component
-//add styles - constans - mixins - colors - typography - spacings
-//add Error boundary
-

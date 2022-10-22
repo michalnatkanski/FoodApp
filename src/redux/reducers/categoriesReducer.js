@@ -1,16 +1,30 @@
-import { CHANGE_CATEGORIES } from "../actions/actionTypes";
+import { CHANGE_CATEGORIES, SEARCH_ITEMS } from "../actions/actionTypes";
 
-const INITIAL_STATE = {currectCategory: 'pizza'};
+const INITIAL_STATE = {
+    currentCategory: 'Pizza',
+    searchValue: '',
+};
 
 const categoriesReducer = (state = INITIAL_STATE, action) => {
+   
     switch (action.type) {
         case CHANGE_CATEGORIES: 
-        return {currectCategory: handleChangeCategory(action.payload, state.currectCategory)};
+            return {currentCategory: action.payload};
         default:
         return state;
     }
 }
 
-const handleChangeCategory = (item, currectCategory) => currectCategory = item;
+const searchReducer = (state = INITIAL_STATE, action) => {
 
-export default categoriesReducer;
+    switch (action.type) {
+        case SEARCH_ITEMS: 
+            return {searchValue: action.payload};
+        default:
+        return state;
+    }
+}
+
+const reducers = {categoriesReducer, searchReducer};
+
+export default reducers;
