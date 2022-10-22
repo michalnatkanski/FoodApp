@@ -1,5 +1,5 @@
 import { StyleSheet } from "react-native";
-import { colors } from "../../../assets/styles/colors";
+import { colors } from "../../../assets/styles";
 
 export default StyleSheet.create({
     titleWrapper: {

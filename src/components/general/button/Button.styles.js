@@ -1,11 +1,11 @@
 import { StyleSheet } from "react-native";
-import { colors } from "../../../assets/styles/colors";
+import { colors } from "../../../assets/styles";
 
 export default StyleSheet.create({
     orderWrapper: {
         marginTop: 60,
         marginHorizontal: 20,
-        backgroundColor: colors.primary,
+        backgroundColor: colors.MAIN_COLORS.primary,
         borderRadius: 50,
         paddingVertical: 25,
         flexDirection: 'row',

@@ -1,5 +1,5 @@
 import { StyleSheet } from "react-native";
-import { colors } from "../../../assets/styles/colors";
+import { colors } from "../../../assets/styles";
 
 export default StyleSheet.create({
     infoWrapper: {
@@ -17,12 +17,12 @@ export default StyleSheet.create({
     infoItemTitle: {
         fontFamily: 'Montserrat-Medium',
         fontSize: 14,
-        color: colors.textLight,
+        color: colors.MAIN_COLORS.textLight,
     },
     infoItemText: {
         fontFamily: 'Montserrat-SemiBold',
         fontSize: 18,
-        color: colors.textDark,
+        color: colors.MAIN_COLORS.textDark,
         marginTop: 5,
     },
     itemImage: {

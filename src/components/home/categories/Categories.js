@@ -7,7 +7,7 @@ import {
     TouchableOpacity
 } from "react-native";
 
-import { colors } from "../../../assets/styles/colors";
+import { colors } from "../../../assets/styles";
 import styles from './Categories.styles';
 import Feather from 'react-native-vector-icons/Feather';
 
@@ -30,19 +30,19 @@ const Categories = ({ categoriesData }) => {
             <TouchableOpacity
                 onPress={() => handleChangeCategory(item.type)}
                 style={[styles.categoryItemWrapper, {
-                    backgroundColor: item.type === activeCategory ? colors.primary : colors.white,
+                    backgroundColor: item.type === activeCategory ? colors.MAIN_COLORS.primary : colors.MAIN_COLORS.white,
                     marginLeft: item.id == 1 ? 20 : 0,
                 }]}>
                 <Image source={item.image} style={styles.categoryItemImage} />
                 <Text style={styles.categoryItemTitle}>{item.type}</Text>
                 <View style={[styles.categorySelectWrapper, {
-                    backgroundColor: item.type === activeCategory ? colors.white : colors.secondary
+                    backgroundColor: item.type === activeCategory ? colors.MAIN_COLORS.white : colors.MAIN_COLORS.secondary
                 }]}>
                     <Feather
                         style={styles.categorySelectIcon}
                         name="chevron-right"
                         size={8}
-                        color={item.type === activeCategory ? colors.black : colors.white}
+                        color={item.type === activeCategory ? colors.MAIN_COLORS.black : colors.MAIN_COLORS.white}
                     />
                 </View>
             </TouchableOpacity>

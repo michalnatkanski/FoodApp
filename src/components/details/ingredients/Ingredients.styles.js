@@ -1,5 +1,5 @@
 import { StyleSheet } from "react-native";
-import { colors } from "../../../assets/styles/colors";
+import { colors } from "../../../assets/styles";
 
 export default StyleSheet.create({
     ingredientsWrapper: {
@@ -9,19 +9,19 @@ export default StyleSheet.create({
         paddingHorizontal: 20,
         fontFamily: 'Montserrat-Bold',
         fontSize: 16,
-        color: colors.textDark,
+        color: colors.MAIN_COLORS.textDark,
     },
     ingredientsListWrapper: {
         paddingVertical: 20,
     },
     ingredientItemWrapper: {
-        backgroundColor: colors.white,
+        backgroundColor: colors.MAIN_COLORS.white,
         alignItems: 'center',
         justifyContent: 'center',
         paddingHorizontal: 10,
         marginRight: 15,
         borderRadius: 15,
-        shadowColor: colors.black,
+        shadowColor: colors.MAIN_COLORS.black,
         shadowOffset: {
             width: 2,
             height: 0,

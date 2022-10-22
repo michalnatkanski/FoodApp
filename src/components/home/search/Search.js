@@ -1,6 +1,6 @@
 import React from "react";
 import { View, TextInput } from "react-native";
-import { colors } from "../../../assets/styles/colors";
+import { colors } from "../../../assets/styles";
 import styles from './Search.styles';
 import Feather from 'react-native-vector-icons/Feather';
 
@@ -17,7 +17,7 @@ const Search = () => {
 
     return (
         <View style={styles.searchWrapper}>
-            <Feather name="search" size={16} color={colors.textDark} />
+            <Feather name="search" size={16} color={colors.MAIN_COLORS.textDark} />
             <View style={styles.search}>
                 <TextInput
                     onChangeText={(value) => dispatch(SearchItems(value))}

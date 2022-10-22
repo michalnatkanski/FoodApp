@@ -1,5 +1,5 @@
 import { StyleSheet } from "react-native";
-import { colors } from "../../../assets/styles/colors";
+import { colors } from "../../../assets/styles";
 
 export default StyleSheet.create({
     container: {
@@ -13,16 +13,16 @@ export default StyleSheet.create({
         paddingTop: 20,
     },
     headerLeft: {
-        borderColor: colors.textLight,
+        borderColor: colors.MAIN_COLORS.textLight,
         borderWidth: 2,
         padding: 12,
         borderRadius: 10,
     },
     headerRight: {
-        backgroundColor: colors.primary,
+        backgroundColor: colors.MAIN_COLORS.primary,
         padding: 12,
         borderRadius: 10,
-        borderColor: colors.primary,
+        borderColor: colors.MAIN_COLORS.primary,
         borderWidth: 2,
     },
 })

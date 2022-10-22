@@ -1,7 +1,7 @@
 import React from "react";
 import { View, Text, TouchableOpacity, Image } from "react-native";
 import styles from './Item.styles';
-import { colors } from "../../../assets/styles/colors";
+import { colors } from "../../../assets/styles";
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
 import Feather from 'react-native-vector-icons/Feather';
 
@@ -22,7 +22,7 @@ const Item = ({ item, onPress }) => {
                 <View>
                     <View>
                         <View style={styles.popularTopWrapper}>
-                            <MaterialCommunityIcons name="crown" size={12} color={colors.primary} />
+                            <MaterialCommunityIcons name="crown" size={12} color={colors.MAIN_COLORS.primary} />
                             <Text style={styles.popularTopText}>top of the week</Text>
                         </View>
                         <View style={styles.popularTitlesWrapper}>
@@ -32,10 +32,10 @@ const Item = ({ item, onPress }) => {
                     </View>
                     <View style={styles.popularCardBottom}>
                         <View style={styles.addPizzaButton}>
-                            <Feather name="plus" size={10} color={colors.textDark} />
+                            <Feather name="plus" size={10} color={colors.MAIN_COLORS.textDark} />
                         </View>
                         <View style={styles.ratingWrapper}>
-                            <MaterialCommunityIcons name="star" size={10} color={colors.textDark} />
+                            <MaterialCommunityIcons name="star" size={10} color={colors.MAIN_COLORS.textDark} />
                             <Text style={styles.rating}>{item.rating}</Text>
                         </View>
                     </View>

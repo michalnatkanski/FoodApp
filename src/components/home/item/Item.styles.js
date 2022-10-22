@@ -1,15 +1,15 @@
 import { StyleSheet } from "react-native";
-import { colors } from "../../../assets/styles/colors";
+import { colors } from "../../../assets/styles";
 
 export default StyleSheet.create({
     popularCardWrapper: {
-        backgroundColor: colors.white,
+        backgroundColor: colors.MAIN_COLORS.white,
         borderRadius: 25,
         paddingTop: 20,
         paddingLeft: 20,
         flexDirection: 'row',
         overflow: 'hidden',
-        shadowColor: colors.black,
+        shadowColor: colors.MAIN_COLORS.black,
         shadowOffset: {
             width: 2,
             height: 0,
@@ -32,12 +32,12 @@ export default StyleSheet.create({
     popularTitlesTitle: {
         fontFamily: 'Montserrat-Semibold',
         fontSize: 14,
-        color: colors.textDark
+        color: colors.MAIN_COLORS.textDark
     },
     popularTitlesWeight: {
         fontFamily: 'Montserrat-Medium',
         fontSize: 12,
-        color: colors.textLight,
+        color: colors.MAIN_COLORS.textLight,
         marginTop: 5,
     },
     popularCardBottom: {
@@ -47,7 +47,7 @@ export default StyleSheet.create({
         marginLeft: -20,
     },
     addPizzaButton: {
-        backgroundColor: colors.primary,
+        backgroundColor: colors.MAIN_COLORS.primary,
         paddingHorizontal: 40,
         paddingVertical: 20,
         borderTopRightRadius: 25,
@@ -61,7 +61,7 @@ export default StyleSheet.create({
     rating: {
         fontFamily: 'Montserrat-Semibold',
         fontSize: 12,
-        color: colors.black,
+        color: colors.MAIN_COLORS.black,
         marginLeft: 5,
     },
     popularCardRight: {

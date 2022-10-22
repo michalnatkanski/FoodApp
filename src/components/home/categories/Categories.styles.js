@@ -1,5 +1,5 @@
 import { StyleSheet } from "react-native";
-import { colors } from "../../../assets/styles/colors";
+import { colors } from "../../../assets/styles";
 
 export default StyleSheet.create({
     categoriesWrapper: {
@@ -18,7 +18,7 @@ export default StyleSheet.create({
         backgroundColor: '#F5CA48',
         marginRight: 20,
         borderRadius: 20,
-        shadowColor: colors.black,
+        shadowColor: colors.MAIN_COLORS.black,
         shadowOffset: {
             width: 2,
             height: 0,

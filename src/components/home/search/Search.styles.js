@@ -1,5 +1,5 @@
 import { StyleSheet } from "react-native";
-import { colors } from "../../../assets/styles/colors";
+import { colors } from "../../../assets/styles";
 
 export default StyleSheet.create({
     searchWrapper: {
@@ -11,13 +11,13 @@ export default StyleSheet.create({
     search: {
         flex: 1,
         marginLeft: 10,
-        borderBottomColor: colors.textLight,
+        borderBottomColor: colors.MAIN_COLORS.textLight,
         borderBottomWidth: 2,
     },
     searchText: {
         fontFamily: 'Montserrat-Semibold',
         fontSize: 14,
         marginBottom: 5,
-        color: colors.textLight,
+        color: colors.MAIN_COLORS.textLight,
     },
 })

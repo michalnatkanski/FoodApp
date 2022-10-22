@@ -3,7 +3,7 @@ import { View, TouchableOpacity } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
 import Feather from 'react-native-vector-icons/Feather';
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
-import { colors } from "../../../assets/styles/colors";
+import { colors } from "../../../assets/styles";
 import styles from './Details.styles';
 //components
 import Info from '../../../components/details/info';
@@ -26,11 +26,11 @@ const Details = ({ route, navigation }) => {
                 <View style={styles.headerWrapper}>
                     <TouchableOpacity onPress={() => navigation.goBack()}>
                         <View style={styles.headerLeft}>
-                            <Feather name="chevron-left" size={12} color={colors.textDark} />
+                            <Feather name="chevron-left" size={12} color={colors.MAIN_COLORS.textDark} />
                         </View>
                     </TouchableOpacity>
                     <View style={styles.headerRight}>
-                        <MaterialCommunityIcons name="star" size={12} color={colors.white} />
+                        <MaterialCommunityIcons name="star" size={12} color={colors.MAIN_COLORS.white} />
                     </View>
                 </View>
             </SafeAreaView>
