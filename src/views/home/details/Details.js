@@ -3,7 +3,7 @@ import { View, TouchableOpacity } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
 import Feather from 'react-native-vector-icons/Feather';
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
-import colors from '../../../assets/colors/colors';
+import { colors } from "../../../assets/styles/colors";
 import styles from './Details.styles';
 //components
 import Info from '../../../components/details/info';

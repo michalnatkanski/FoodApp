@@ -1,6 +1,6 @@
 import React from "react";
 import { View, SafeAreaView, Image } from "react-native";
-import colors from "../../../assets/colors/colors";
+import { colors } from "../../../assets/styles/colors";
 import styles from './Header.styles';
 import Feather from 'react-native-vector-icons/Feather';
 
