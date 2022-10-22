@@ -1,24 +1,6 @@
 import React from "react";
-import { View, Text, StyleSheet } from "react-native";
-import colors from "../../../assets/colors/colors";
-
-const styles = StyleSheet.create({
-    titleWrapper: {
-        marginTop: 30,
-        paddingHorizontal: 20,
-    },
-    titlesSubtitle: {
-        fontFamily: 'Montserrat-Regular',
-        fontSize: 16,
-        color: colors.textDark,
-    },
-    titlesTitle: {
-        fontFamily: 'Montserrat-Bold',
-        fontSize: 32,
-        color: colors.textDark,
-        marginTop: 5,
-    },
-});
+import { View, Text } from "react-native";
+import styles from './Title.styles';
 
 const Title = ({ title, subtitle }) => {
 
