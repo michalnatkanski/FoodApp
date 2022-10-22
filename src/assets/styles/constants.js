@@ -7,3 +7,7 @@ export const BORDER_RADIUS = {
     LIST_ITEM: 25,
     HEADER_ICON: 10,
 }
+
+export const SHADOW_RADIUS = {
+    ITEM: 10,
+}

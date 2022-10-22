@@ -1,10 +1,10 @@
 import { StyleSheet } from "react-native";
-import { colors, typography } from "../../../assets/styles";
+import { colors, typography, spacings } from "../../../assets/styles";
 
 export default StyleSheet.create({
     priceWrapper: {
-        marginTop: 20,
-        paddingHorizontal: 20,
+        marginTop: spacings.SCALE_20,
+        paddingHorizontal: spacings.SCALE_20,
     },
     priceText: {
         color: colors.MAIN_COLORS.PRICE,

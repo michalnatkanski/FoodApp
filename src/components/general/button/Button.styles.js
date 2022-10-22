@@ -1,13 +1,13 @@
 import { StyleSheet } from "react-native";
-import { colors, constants, typography } from "../../../assets/styles";
+import { colors, constants, typography, spacings } from "../../../assets/styles";
 
 export default StyleSheet.create({
     orderWrapper: {
-        marginTop: 60,
-        marginHorizontal: 20,
+        marginTop: spacings.SCALE_60,
+        marginHorizontal: spacings.SCALE_20,
         backgroundColor: colors.MAIN_COLORS.PRIMARY,
         borderRadius: constants.BORDER_RADIUS.BUTTON,
-        paddingVertical: 25,
+        paddingVertical: spacings.SCALE_25,
         flexDirection: 'row',
         justifyContent: 'center',
         alignItems: 'center',
@@ -16,6 +16,6 @@ export default StyleSheet.create({
     orderText: {
         fontFamily: typography.FONT_MONTSERRAT_BOLD,
         fontSize: typography.FONT_SIZE_14,
-        marginRight: 10,
+        marginRight: spacings.SCALE_10,
     },
 })

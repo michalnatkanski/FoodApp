@@ -1,12 +1,12 @@
 import { StyleSheet } from "react-native";
-import { constants } from '../../../assets/styles';
+import { constants, spacings } from '../../../assets/styles';
 
 export default StyleSheet.create({
     headerWrapper: {
         flexDirection: 'row',
         justifyContent: 'space-between',
-        paddingHorizontal: 20,
-        paddingTop: 20,
+        paddingHorizontal: spacings.SCALE_20,
+        paddingTop: spacings.SCALE_20,
         alignItems: 'center'
 
     },

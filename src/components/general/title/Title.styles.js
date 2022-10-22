@@ -1,10 +1,10 @@
 import { StyleSheet } from "react-native";
-import { colors, typography } from "../../../assets/styles";
+import { colors, typography, spacings } from "../../../assets/styles";
 
 export default StyleSheet.create({
     titleWrapper: {
-        marginTop: 30,
-        paddingHorizontal: 20,
+        marginTop: spacings.SCALE_30,
+        paddingHorizontal: spacings.SCALE_20,
     },
     titlesSubtitle: {
         fontFamily: typography.FONT_MONTSERRAT_REGULAR,
@@ -15,6 +15,6 @@ export default StyleSheet.create({
         fontFamily: typography.FONT_MONTSERRAT_BOLD,
         fontSize: typography.FONT_SIZE_32,
         color: colors.MAIN_COLORS.TEXT_DARK,
-        marginTop: 5,
+        marginTop: spacings.SCALE_5,
     },
 })

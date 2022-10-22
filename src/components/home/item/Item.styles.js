@@ -1,12 +1,12 @@
 import { StyleSheet } from "react-native";
-import { colors, constants, typography } from "../../../assets/styles";
+import { colors, constants, typography, spacings } from "../../../assets/styles";
 
 export default StyleSheet.create({
     popularCardWrapper: {
         backgroundColor: colors.MAIN_COLORS.WHITE,
         borderRadius: constants.BORDER_RADIUS.PROFILE_IMAGE,
-        paddingTop: 20,
-        paddingLeft: 20,
+        paddingTop: spacings.SCALE_20,
+        paddingLeft: spacings.SCALE_20,
         flexDirection: 'row',
         overflow: 'hidden',
         shadowColor: colors.MAIN_COLORS.BLACK,
@@ -15,7 +15,7 @@ export default StyleSheet.create({
             height: 0,
         },
         shadowOpacity: 0.05,
-        shadowRadius: 10,
+        shadowRadius: constants.SHADOW_RADIUS.ITEM,
         elevation: 2,
     },
     popularTopWrapper: {
@@ -23,11 +23,11 @@ export default StyleSheet.create({
         alignItems: 'center',
     },
     popularTopText: {
-        marginLeft: 10,
+        marginLeft: spacings.SCALE_10,
         fontFamily: typography.FONT_MONTSERRAT_SEMI_BOLD,
     },
     popularTitlesWrapper: {
-        marginTop: 20,
+        marginTop: spacings.SCALE_20,
     },
     popularTitlesTitle: {
         fontFamily: typography.FONT_MONTSERRAT_SEMI_BOLD,
@@ -38,34 +38,34 @@ export default StyleSheet.create({
         fontFamily: typography.FONT_MONTSERRAT_MEDIUM,
         fontSize: typography.FONT_SIZE_12,
         color: colors.MAIN_COLORS.TEXT_LIGHT,
-        marginTop: 5,
+        marginTop: spacings.SCALE_5,
     },
     popularCardBottom: {
         flexDirection: 'row',
         alignItems: 'center',
-        marginTop: 10,
-        marginLeft: -20,
+        marginTop: spacings.SCALE_10,
+        marginLeft: -spacings.SCALE_20,
     },
     addPizzaButton: {
         backgroundColor: colors.MAIN_COLORS.PRIMARY,
-        paddingHorizontal: 40,
-        paddingVertical: 20,
-        borderTopRightRadius: 25,
-        borderBottomLeftRadius: 25,
+        paddingHorizontal: spacings.SCALE_40,
+        paddingVertical: spacings.SCALE_20,
+        borderTopRightRadius: constants.BORDER_RADIUS.LIST_ITEM,
+        borderBottomLeftRadius: constants.BORDER_RADIUS.LIST_ITEM,
     },
     ratingWrapper: {
         flexDirection: 'row',
         alignItems: 'center',
-        marginLeft: 20,
+        marginLeft: spacings.SCALE_20,
     },
     rating: {
         fontFamily: typography.FONT_MONTSERRAT_SEMI_BOLD,
         fontSize: typography.FONT_SIZE_12,
         color: colors.MAIN_COLORS.BLACK,
-        marginLeft: 5,
+        marginLeft: spacings.SCALE_5,
     },
     popularCardRight: {
-        marginLeft: 40,
+        marginLeft: spacings.SCALE_40,
         flex: 1,
         alignItems: 'flex-end'
     },

@@ -1,9 +1,9 @@
 import { StyleSheet } from "react-native";
-import { typography } from "../../../assets/styles";
+import { typography, spacings } from "../../../assets/styles";
 
 export default StyleSheet.create({
     popularWrapper: {
-        paddingHorizontal: 20,
+        paddingHorizontal: spacings.SCALE_20,
     },
     popularTitle: {
         fontFamily: typography.FONT_MONTSERRAT_BOLD,
@@ -12,7 +12,7 @@ export default StyleSheet.create({
     noItems: {
         fontSize: typography.FONT_SIZE_18,
         fontFamily: typography.FONT_MONTSERRAT_BOLD,
-        marginTop: 30,
+        marginTop: spacings.SCALE_30,
         textAlign: 'center'
     }
 })

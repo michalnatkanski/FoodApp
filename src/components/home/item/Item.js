@@ -1,7 +1,7 @@
 import React from "react";
 import { View, Text, TouchableOpacity, Image } from "react-native";
 import styles from './Item.styles';
-import { colors } from "../../../assets/styles";
+import { colors, spacings } from "../../../assets/styles";
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
 import Feather from 'react-native-vector-icons/Feather';
 
@@ -16,7 +16,7 @@ const Item = ({ item, onPress }) => {
                 style={[
                     styles.popularCardWrapper,
                     {
-                        marginTop: item.id == 1 ? 10 : 20,
+                        marginTop: item.id == 1 ? 10 : spacings.SCALE_20,
                     }
                 ]}>
                 <View>
