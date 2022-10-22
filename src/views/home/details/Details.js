@@ -26,11 +26,11 @@ const Details = ({ route, navigation }) => {
                 <View style={styles.headerWrapper}>
                     <TouchableOpacity onPress={() => navigation.goBack()}>
                         <View style={styles.headerLeft}>
-                            <Feather name="chevron-left" size={12} color={colors.MAIN_COLORS.textDark} />
+                            <Feather name="chevron-left" size={12} color={colors.MAIN_COLORS.TEXT_DARK} />
                         </View>
                     </TouchableOpacity>
                     <View style={styles.headerRight}>
-                        <MaterialCommunityIcons name="star" size={12} color={colors.MAIN_COLORS.white} />
+                        <MaterialCommunityIcons name="star" size={12} color={colors.MAIN_COLORS.WHITE} />
                     </View>
                 </View>
             </SafeAreaView>

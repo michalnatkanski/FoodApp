@@ -12,7 +12,7 @@ const Header = () => {
         <SafeAreaView>
             <View style={styles.headerWrapper}>
                 <Image source={require('../../../assets/images/profile.png')} style={styles.profileImage} />
-                <Feather name="menu" size={24} color={colors.MAIN_COLORS.textDark} />
+                <Feather name="menu" size={24} color={colors.MAIN_COLORS.TEXT_DARK} />
             </View>
         </SafeAreaView>
     )

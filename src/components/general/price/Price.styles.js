@@ -7,7 +7,7 @@ export default StyleSheet.create({
         paddingHorizontal: 20,
     },
     priceText: {
-        color: colors.MAIN_COLORS.price,
+        color: colors.MAIN_COLORS.PRICE,
         fontFamily: 'Montserrat-Bold',
         fontSize: 32,
     },

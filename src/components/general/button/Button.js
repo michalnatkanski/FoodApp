@@ -12,7 +12,7 @@ const Button = ({text}) => {
         <TouchableOpacity onPress={() => alert('Your order has been placed!')}>
             <View style={styles.orderWrapper}>
                 <Text style={styles.orderText}>{text}</Text>
-                <Feather name="chevron-right" size={18} color={colors.MAIN_COLORS.black} />
+                <Feather name="chevron-right" size={18} color={colors.MAIN_COLORS.BLACK} />
             </View>
         </TouchableOpacity>
     )

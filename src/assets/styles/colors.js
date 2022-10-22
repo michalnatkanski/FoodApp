@@ -1,10 +1,10 @@
 export const MAIN_COLORS = {
-    background: '#F9F9FB',
-    textDark: '#313234',
-    primary: '#F5CA48',
-    secondary: '#F26C68',
-    textLight: '#CDCDCD',
-    price: '#E4723C',
-    white: '#fff',
-    black: '#000',
+    BACKGROUND: '#F9F9FB',
+    TEXT_DARK: '#313234',
+    PRIMARY: '#F5CA48',
+    SECONDARY: '#F26C68',
+    TEXT_LIGHT: '#CDCDCD',
+    PRICE: '#E4723C',
+    WHITE: '#fff',
+    BLACK: '#000',
 }

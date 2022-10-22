@@ -17,12 +17,12 @@ export default StyleSheet.create({
     infoItemTitle: {
         fontFamily: 'Montserrat-Medium',
         fontSize: 14,
-        color: colors.MAIN_COLORS.textLight,
+        color: colors.MAIN_COLORS.TEXT_LIGHT,
     },
     infoItemText: {
         fontFamily: 'Montserrat-SemiBold',
         fontSize: 18,
-        color: colors.MAIN_COLORS.textDark,
+        color: colors.MAIN_COLORS.TEXT_DARK,
         marginTop: 5,
     },
     itemImage: {

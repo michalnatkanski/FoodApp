@@ -11,13 +11,13 @@ export default StyleSheet.create({
     search: {
         flex: 1,
         marginLeft: 10,
-        borderBottomColor: colors.MAIN_COLORS.textLight,
+        borderBottomColor: colors.MAIN_COLORS.TEXT_LIGHT,
         borderBottomWidth: 2,
     },
     searchText: {
         fontFamily: 'Montserrat-Semibold',
         fontSize: 14,
         marginBottom: 5,
-        color: colors.MAIN_COLORS.textLight,
+        color: colors.MAIN_COLORS.TEXT_LIGHT,
     },
 })

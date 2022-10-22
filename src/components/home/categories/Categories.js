@@ -30,19 +30,19 @@ const Categories = ({ categoriesData }) => {
             <TouchableOpacity
                 onPress={() => handleChangeCategory(item.type)}
                 style={[styles.categoryItemWrapper, {
-                    backgroundColor: item.type === activeCategory ? colors.MAIN_COLORS.primary : colors.MAIN_COLORS.white,
+                    backgroundColor: item.type === activeCategory ? colors.MAIN_COLORS.PRIMARY : colors.MAIN_COLORS.WHITE,
                     marginLeft: item.id == 1 ? 20 : 0,
                 }]}>
                 <Image source={item.image} style={styles.categoryItemImage} />
                 <Text style={styles.categoryItemTitle}>{item.type}</Text>
                 <View style={[styles.categorySelectWrapper, {
-                    backgroundColor: item.type === activeCategory ? colors.MAIN_COLORS.white : colors.MAIN_COLORS.secondary
+                    backgroundColor: item.type === activeCategory ? colors.MAIN_COLORS.WHITE : colors.MAIN_COLORS.SECONDARY
                 }]}>
                     <Feather
                         style={styles.categorySelectIcon}
                         name="chevron-right"
                         size={8}
-                        color={item.type === activeCategory ? colors.MAIN_COLORS.black : colors.MAIN_COLORS.white}
+                        color={item.type === activeCategory ? colors.MAIN_COLORS.BLACK : colors.MAIN_COLORS.WHITE}
                     />
                 </View>
             </TouchableOpacity>

@@ -17,7 +17,7 @@ const Search = () => {
 
     return (
         <View style={styles.searchWrapper}>
-            <Feather name="search" size={16} color={colors.MAIN_COLORS.textDark} />
+            <Feather name="search" size={16} color={colors.MAIN_COLORS.TEXT_DARK} />
             <View style={styles.search}>
                 <TextInput
                     onChangeText={(value) => dispatch(SearchItems(value))}

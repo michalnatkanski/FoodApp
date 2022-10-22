@@ -1,5 +1,5 @@
 import { StyleSheet } from "react-native";
-import { colors } from "../../../assets/styles";
+import { colors, constants } from "../../../assets/styles";
 
 export default StyleSheet.create({
     categoriesWrapper: {
@@ -17,8 +17,8 @@ export default StyleSheet.create({
     categoryItemWrapper: {
         backgroundColor: '#F5CA48',
         marginRight: 20,
-        borderRadius: 20,
-        shadowColor: colors.MAIN_COLORS.black,
+        borderRadius: constants.BORDER_RADIUS.CATEGORY_ITEM,
+        shadowColor: colors.MAIN_COLORS.BLACK,
         shadowOffset: {
             width: 2,
             height: 0,
@@ -46,7 +46,7 @@ export default StyleSheet.create({
         marginTop: 20,
         width: 26,
         height: 26,
-        borderRadius: 26,
+        borderRadius: constants.BORDER_RADIUS.SELECT_ITEM,
         marginBottom: 20,
     },
     categorySelectIcon: {

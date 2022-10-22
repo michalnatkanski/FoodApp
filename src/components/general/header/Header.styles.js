@@ -1,4 +1,5 @@
 import { StyleSheet } from "react-native";
+import { constants } from '../../../assets/styles';
 
 export default StyleSheet.create({
     headerWrapper: {
@@ -12,6 +13,6 @@ export default StyleSheet.create({
     profileImage: {
         width: 40,
         height: 40,
-        borderRadius: 40,
+        borderRadius: constants.BORDER_RADIUS.PROFILE_IMAGE,
     },
 })

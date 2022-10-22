@@ -22,7 +22,7 @@ const Item = ({ item, onPress }) => {
                 <View>
                     <View>
                         <View style={styles.popularTopWrapper}>
-                            <MaterialCommunityIcons name="crown" size={12} color={colors.MAIN_COLORS.primary} />
+                            <MaterialCommunityIcons name="crown" size={12} color={colors.MAIN_COLORS.PRIMARY} />
                             <Text style={styles.popularTopText}>top of the week</Text>
                         </View>
                         <View style={styles.popularTitlesWrapper}>
@@ -32,10 +32,10 @@ const Item = ({ item, onPress }) => {
                     </View>
                     <View style={styles.popularCardBottom}>
                         <View style={styles.addPizzaButton}>
-                            <Feather name="plus" size={10} color={colors.MAIN_COLORS.textDark} />
+                            <Feather name="plus" size={10} color={colors.MAIN_COLORS.TEXT_DARK} />
                         </View>
                         <View style={styles.ratingWrapper}>
-                            <MaterialCommunityIcons name="star" size={10} color={colors.MAIN_COLORS.textDark} />
+                            <MaterialCommunityIcons name="star" size={10} color={colors.MAIN_COLORS.TEXT_DARK} />
                             <Text style={styles.rating}>{item.rating}</Text>
                         </View>
                     </View>
