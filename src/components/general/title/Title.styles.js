@@ -9,12 +9,12 @@ export default StyleSheet.create({
     titlesSubtitle: {
         fontFamily: 'Montserrat-Regular',
         fontSize: 16,
-        color: colors.textDark,
+        color: colors.MAIN_COLORS.textDark,
     },
     titlesTitle: {
         fontFamily: 'Montserrat-Bold',
         fontSize: 32,
-        color: colors.textDark,
+        color: colors.MAIN_COLORS.textDark,
         marginTop: 5,
     },
 })
