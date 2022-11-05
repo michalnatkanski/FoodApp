@@ -4,6 +4,7 @@ import { typography, spacings } from "../../../assets/styles";
 export default StyleSheet.create({
     popularWrapper: {
         paddingHorizontal: spacings.SCALE_20,
+        paddingBottom: 50,
     },
     popularTitle: {
         fontFamily: typography.FONT_MONTSERRAT_BOLD,

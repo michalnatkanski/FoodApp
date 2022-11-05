@@ -2,6 +2,20 @@ import { StyleSheet } from "react-native";
 import { colors, constants, typography, spacings } from "../../../assets/styles";
 
 export default StyleSheet.create({
+    itemWrapper: {
+        shadowColor: colors.MAIN_COLORS.BLACK,
+        shadowOffset: {
+            width: 0,
+            height: 4,
+        },
+        shadowOpacity: 0.32,
+        shadowRadius: 5.46,
+        
+        elevation: 9,
+        backgroundColor: colors.MAIN_COLORS.WHITE,
+        borderRadius: constants.BORDER_RADIUS.PROFILE_IMAGE,
+        marginTop: spacings.SCALE_20,
+    },
     popularCardWrapper: {
         backgroundColor: colors.MAIN_COLORS.WHITE,
         borderRadius: constants.BORDER_RADIUS.PROFILE_IMAGE,
@@ -9,14 +23,6 @@ export default StyleSheet.create({
         paddingLeft: spacings.SCALE_20,
         flexDirection: 'row',
         overflow: 'hidden',
-        shadowColor: colors.MAIN_COLORS.BLACK,
-        shadowOffset: {
-            width: 2,
-            height: 0,
-        },
-        shadowOpacity: 0.05,
-        shadowRadius: constants.SHADOW_RADIUS.ITEM,
-        elevation: 2,
     },
     popularTopWrapper: {
         flexDirection: 'row',
@@ -65,9 +71,9 @@ export default StyleSheet.create({
         marginLeft: spacings.SCALE_5,
     },
     popularCardRight: {
-        marginLeft: spacings.SCALE_40,
+        marginLeft: spacings.SCALE_50,
         flex: 1,
-        alignItems: 'flex-end'
+        alignItems: 'flex-start'
     },
     popularCardImage: {
         width: 200,

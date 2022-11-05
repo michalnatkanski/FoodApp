@@ -17,3 +17,7 @@ export default function App() {
     </Provider>
   );
 };
+
+//to fetch data by redux - https://stackoverflow.com/questions/48178468/fetching-data-from-api-in-react-native-using-redux
+//https://medium.com/personal-project/fetching-an-api-using-redux-and-useeffect-f23813a863f5
+// add languages

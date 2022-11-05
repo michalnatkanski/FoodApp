@@ -15,7 +15,9 @@ import { useSelector } from 'react-redux';
 const Home = ({ navigation }) => {
 
     const state = useSelector(state => state);
+
     const activeCategory = state.currentCategory.currentCategory;
+    
     const searchValue = state.searchValue.searchValue;
 
     const filteredDataByCategory = filteredItems.filter(item => item.type == activeCategory);

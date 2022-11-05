@@ -19,6 +19,7 @@ export default StyleSheet.create({
         alignItems: 'center',
         justifyContent: 'center',
         paddingHorizontal: spacings.SCALE_10,
+        marginVertical: spacings.SCALE_10,
         marginRight: spacings.SCALE_15,
         borderRadius: constants.BORDER_RADIUS.INGREDIENTS,
         shadowColor: colors.MAIN_COLORS.BLACK,
