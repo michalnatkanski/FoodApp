@@ -8,7 +8,7 @@ import Search from "../../../components/home/search";
 import Title from '../../../components/general/title';
 import Header from '../../../components/general/header';
 
-const Home = ({ navigation }) => {
+const Home = () => {
 
     return (
         <View style={styles.container}>
@@ -16,11 +16,11 @@ const Home = ({ navigation }) => {
                 contentInsetAdjustmentBehavior="automatic"
                 showsVerticalScrollIndicator={false}
             >
-                <Header main={true} navigation={navigation}/>
+                <Header main={true} />
                 <Title title={'Delivery'} subtitle={'Food'} />
                 <Search />
                 <Categories />
-                <Popular navigation={navigation} />
+                <Popular />
             </ScrollView>
         </View>
     )

@@ -4,10 +4,15 @@ import styles from './Popular.styles';
 import { useSelector } from 'react-redux';
 //components
 import Item from "../item";
+//helpers
 import { filteredItems, searchResult } from "../../../utils/FilteringData";
 import { useSearchDebounce } from "../../../utils/debounce";
+//nav
+import { useNavigation } from "@react-navigation/native";
 
-const Popular = ({ navigation }) => {
+const Popular = () => {
+
+    const navigation = useNavigation();
 
     const state = useSelector(state => state);
 

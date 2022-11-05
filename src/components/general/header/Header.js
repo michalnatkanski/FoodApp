@@ -4,12 +4,16 @@ import { colors } from "../../../assets/styles";
 import styles from './Header.styles';
 import Feather from 'react-native-vector-icons/Feather';
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
+//nav
+import { useNavigation } from "@react-navigation/native";
 
 Feather.loadFont();
 MaterialCommunityIcons.loadFont();
 
-const Header = ({ main, navigation }) => {
+const Header = ({ main }) => {
 
+    const navigation = useNavigation();
+    
     return (
         <SafeAreaView>
             <View style={styles.headerWrapper}>
