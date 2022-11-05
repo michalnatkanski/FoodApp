@@ -5,9 +5,7 @@ import styles from './Title.styles';
 const Title = ({ title, subtitle }) => {
 
     return (
-        <View style={[styles.titleWrapper, {
-            marginTop: subtitle ? 30 : 0,
-        }]}>
+        <View style={styles.titleWrapper}>
             {subtitle ?
                 <Text style={styles.titlesSubtitle}>{subtitle}</Text>
                 : null
