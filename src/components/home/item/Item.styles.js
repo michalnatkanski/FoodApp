@@ -6,15 +6,13 @@ export default StyleSheet.create({
         shadowColor: colors.MAIN_COLORS.BLACK,
         shadowOffset: {
             width: 0,
-            height: 4,
+            height: 1,
         },
         shadowOpacity: 0.32,
         shadowRadius: 5.46,
-        
-        elevation: 9,
+        elevation: 6,
         backgroundColor: colors.MAIN_COLORS.WHITE,
         borderRadius: constants.BORDER_RADIUS.PROFILE_IMAGE,
-        marginTop: spacings.SCALE_20,
     },
     popularCardWrapper: {
         backgroundColor: colors.MAIN_COLORS.WHITE,
@@ -58,6 +56,7 @@ export default StyleSheet.create({
         paddingVertical: spacings.SCALE_20,
         borderTopRightRadius: constants.BORDER_RADIUS.LIST_ITEM,
         borderBottomLeftRadius: constants.BORDER_RADIUS.LIST_ITEM,
+        bottom: -2
     },
     ratingWrapper: {
         flexDirection: 'row',
