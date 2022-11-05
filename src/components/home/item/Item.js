@@ -11,15 +11,13 @@ Feather.loadFont();
 const Item = ({ item, onPress }) => {
 
     return (
-        <View style={styles.itemWrapper}>
+        <View style={[styles.itemWrapper, 
+            {
+                marginTop: item.id == 1 ? 10 : spacings.SCALE_20,
+            }]}>
             <TouchableOpacity onPress={() => onPress()}>
                 <View
-                    style={[
-                        styles.popularCardWrapper,
-                        {
-                            marginTop: item.id == 1 ? 10 : spacings.SCALE_20,
-                        }
-                    ]}>
+                    style={styles.popularCardWrapper}>
                     <View>
                         <View>
                             <View style={styles.popularTopWrapper}>

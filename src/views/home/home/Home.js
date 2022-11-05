@@ -34,7 +34,7 @@ const Home = ({ navigation }) => {
                 contentInsetAdjustmentBehavior="automatic"
                 showsVerticalScrollIndicator={false}
             >
-                <Header />
+                <Header main={true} navigation={navigation}/>
                 <Title title={'Delivery'} subtitle={'Food'} />
                 <Search />
                 <Categories categoriesData={categoriesData} />

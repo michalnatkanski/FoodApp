@@ -1,5 +1,5 @@
 import React from "react";
-import { View, Text, Image, FlatList } from "react-native";
+import { View, Text, Image, FlatList, TouchableOpacity } from "react-native";
 import styles from './Ingredients.styles';
 import Feather from 'react-native-vector-icons/Feather';
 
@@ -9,11 +9,11 @@ const Ingredients = ({ item }) => {
 
     const renderIngredientsItem = ({ item }) => {
         return (
-            <View style={[styles.ingredientItemWrapper, {
+            <TouchableOpacity style={[styles.ingredientItemWrapper, {
                 marginLeft: item.id === '1' ? 20 : 0,
             }]}>
                 <Image style={styles.ingredientImage} source={item.image} />
-            </View>
+            </TouchableOpacity>
         )
     }
 
