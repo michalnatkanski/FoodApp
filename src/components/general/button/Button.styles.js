@@ -3,7 +3,7 @@ import { colors, constants, typography, spacings } from "../../../assets/styles"
 
 export default StyleSheet.create({
     orderWrapper: {
-        marginTop: spacings.SCALE_60,
+        marginVertical: spacings.SCALE_60,
         marginHorizontal: spacings.SCALE_20,
         backgroundColor: colors.MAIN_COLORS.PRIMARY,
         borderRadius: constants.BORDER_RADIUS.BUTTON,
