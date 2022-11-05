@@ -5,21 +5,21 @@ const INITIAL_STATE = {
     searchValue: '',
 };
 
-const categoriesReducer = (state = INITIAL_STATE, action) => {
+const categoriesReducer = (state = INITIAL_STATE.currentCategory, action) => {
    
     switch (action.type) {
         case CHANGE_CATEGORIES: 
-            return {currentCategory: action.payload};
+            return action.payload;
         default:
         return state;
     }
 }
 
-const searchReducer = (state = INITIAL_STATE, action) => {
+const searchReducer = (state = INITIAL_STATE.searchValue, action) => {
 
     switch (action.type) {
         case SEARCH_ITEMS: 
-            return {searchValue: action.payload};
+            return action.payload;
         default:
         return state;
     }

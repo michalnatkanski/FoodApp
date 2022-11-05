@@ -10,17 +10,18 @@ import {
 import { colors } from "../../../assets/styles";
 import styles from './Categories.styles';
 import Feather from 'react-native-vector-icons/Feather';
+import {  categoriesData } from "../../../utils/FilteringData";
 
 Feather.loadFont();
 
 import { useDispatch, useSelector } from 'react-redux';
 import { ChangeCategories } from "../../../redux/actions/actions";
 
-const Categories = ({ categoriesData }) => {
+const Categories = () => {
 
     const dispatch = useDispatch();
     const data = useSelector(state => state);
-    const activeCategory = data.currentCategory.currentCategory;
+    const activeCategory = data.currentCategory;
 
     handleChangeCategory = (type) => dispatch(ChangeCategories(type));
 
